@@ -1,84 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sand Creek Whitetail</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: #005baa;
-            color: #fff;
-            padding: 15px 0;
-            text-align: center;
-        }
-        header nav {
-            display: flex;
-            justify-content: center;
-        }
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .hero {
-            background: url('hero-image.jpg') no-repeat center center;
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-        .content {
-            padding: 20px;
-        }
-        .content h2 {
-            font-size: 32px;
-            color: #005baa;
-        }
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sand Creek Whitetail</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand {
+      color: #fff;
+      font-weight: bold;
+    }
+    .nav-link {
+      color: #fff;
+    }
+    .jumbotron {
+      background-image: url('https://via.placeholder.com/1920x1080');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .card {
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Welcome to My Website</h1>
-    </section>
-    <section class="content">
-        <h2>About Us</h2>
-        <p>Whitetail Deer.</p>
-        <h2>Contact Us</h2>
-        <p>Sand Creek Whitetail.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sand Creek Whitetail</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to Sand Creek Whitetail</h1>
+      <p class="lead">Unlock Nature's Potential.</p>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">text description placeholder.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">text description placeholder.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">text description placeholder.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2024 Sand Creek Whitetail. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
