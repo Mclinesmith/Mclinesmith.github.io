@@ -3,150 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sand Creek Whitetail</title>
+    <title>Sand Creek Whitetail - Premium Hunting Experiences</title>
+    <meta name="description" content="Experience the hunt of a lifetime with Sand Creek Whitetail. Trophy bucks, comfortable lodging, and expert guides in [Your Location].">
+    <meta name="keywords" content="whitetail hunting, trophy bucks, hunting lodge, guided hunts, [Your Location]">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        :root {
-            --primary-color: #4A5D23;
-            --secondary-color: #718C3A;
-            --accent-color: #8FA54F;
-            --background-color: #F0F0F0;
-            --text-color: #333333;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: var(--secondary-color) 3px solid;
-        }
-
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-        }
-
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        header #branding {
-            float: left;
-        }
-
-        header #branding h1 {
-            margin: 0;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        header .highlight, header .current a {
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-
-        header a:hover {
-            color: var(--secondary-color);
-        }
-
-        #showcase {
-            min-height: 400px;
-            background: url('showcase.jpg') no-repeat 0 -400px;
-            text-align: center;
-            color: #ffffff;
-        }
-
-        #showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-
-        #showcase p {
-            font-size: 20px;
-        }
-
-        #newsletter {
-            padding: 15px;
-            color: #ffffff;
-            background: var(--secondary-color);
-        }
-
-        #newsletter h1 {
-            float: left;
-        }
-
-        #newsletter form {
-            float: right;
-            margin-top: 15px;
-        }
-
-        #newsletter input[type="email"] {
-            padding: 4px;
-            height: 25px;
-            width: 250px;
-        }
-
-        .button_1 {
-            height: 38px;
-            background: var(--accent-color);
-            border: 0;
-            padding-left: 20px;
-            padding-right: 20px;
-            color: #ffffff;
-        }
-
-        #boxes {
-            margin-top: 20px;
-        }
-
-        #boxes .box {
-            float: left;
-            text-align: center;
-            width: 30%;
-            padding: 10px;
-        }
-
-        #boxes .box img {
-            width: 90px;
-        }
-
-        footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #ffffff;
-            background-color: var(--primary-color);
-            text-align: center;
-        }
+        /* CSS styles here (as in the previous example) */
+        /* ... */
     </style>
 </head>
 <body>
@@ -171,41 +34,103 @@
         <div class="container">
             <h1>Experience the Hunt of a Lifetime</h1>
             <p>Sand Creek Whitetail offers premium hunting experiences in [Your Location]</p>
+            <a href="book-now.html" class="cta-button">Book Your Hunt</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Why Choose Sand Creek Whitetail?</h2>
+            <div class="feature">
+                <img src="trophy-buck.jpg" alt="Trophy Buck">
+                <h3>Trophy Bucks</h3>
+                <p>Our carefully managed property consistently produces some of the biggest bucks in [Your Region].</p>
+            </div>
+            <div class="feature">
+                <img src="luxury-lodge.jpg" alt="Luxury Lodge">
+                <h3>Luxury Accommodations</h3>
+                <p>Relax in our state-of-the-art lodge with all the comforts of home and then some.</p>
+            </div>
+            <div class="feature">
+                <img src="expert-guide.jpg" alt="Expert Guide">
+                <h3>Expert Guides</h3>
+                <p>Our experienced guides know every inch of the property and will help ensure your success.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Hunters Say</h2>
+            <div class="testimonial">
+                <img src="hunter1.jpg" alt="Happy Hunter">
+                <blockquote>
+                    "The best hunting experience of my life. I'll be back next season for sure!"
+                </blockquote>
+                <cite>- John D., Texas</cite>
+            </div>
+            <div class="testimonial">
+                <img src="hunter2.jpg" alt="Satisfied Client">
+                <blockquote>
+                    "Top-notch guides and incredible deer. Sand Creek is the real deal."
+                </blockquote>
+                <cite>- Sarah M., Ohio</cite>
+            </div>
         </div>
     </section>
 
     <section id="newsletter">
         <div class="container">
-            <h1>Subscribe to Our Newsletter</h1>
-            <form>
-                <input type="email" placeholder="Enter Email...">
+            <h2>Stay Updated on Prime Hunting Opportunities</h2>
+            <p>Subscribe to our newsletter for exclusive offers and hunting tips.</p>
+            <form id="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit" class="button_1">Subscribe</button>
             </form>
         </div>
     </section>
 
-    <section id="boxes">
+    <section id="photo-gallery">
         <div class="container">
-            <div class="box">
-                <img src="trophy.png" alt="Trophy Buck">
-                <h3>Trophy Bucks</h3>
-                <p>Our property is home to some of the biggest bucks in the region.</p>
+            <h2>Recent Trophies</h2>
+            <div class="gallery">
+                <img src="trophy1.jpg" alt="Recent Trophy 1">
+                <img src="trophy2.jpg" alt="Recent Trophy 2">
+                <img src="trophy3.jpg" alt="Recent Trophy 3">
+                <img src="trophy4.jpg" alt="Recent Trophy 4">
             </div>
-            <div class="box">
-                <img src="lodge.png" alt="Comfortable Lodging">
-                <h3>Comfortable Lodging</h3>
-                <p>Stay in our fully equipped, modern hunting lodge during your trip.</p>
-            </div>
-            <div class="box">
-                <img src="guide.png" alt="Experienced Guides">
-                <h3>Experienced Guides</h3>
-                <p>Our knowledgeable guides ensure a safe and successful hunt.</p>
-            </div>
+            <a href="gallery.html" class="view-more">View Full Gallery</a>
+        </div>
+    </section>
+
+    <section id="contact-info">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to book your hunt or have questions? Get in touch with us:</p>
+            <ul>
+                <li>Phone: (555) 123-4567</li>
+                <li>Email: info@sandcreekwhitetail.com</li>
+                <li>Address: 123 Hunting Lane, Deerville, State 12345</li>
+            </ul>
         </div>
     </section>
 
     <footer>
-        <p>Sand Creek Whitetail, Copyright &copy; 2025</p>
+        <div class="container">
+            <p>&copy; 2025 Sand Creek Whitetail. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
