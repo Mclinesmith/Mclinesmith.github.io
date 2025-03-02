@@ -1,132 +1,211 @@
----
-layout: default
-title: Sand Creek Whitetail - Elite Stocker Bucks for Hunting Preserves
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>Sand Creek Whitetail</title>
     <style>
-        /* CSS styles here */
-    </style>
-</head>
-<body>
-    <!-- Rest of the HTML content -->
+        :root {
+            --primary-color: #4A5D23;
+            --secondary-color: #718C3A;
+            --accent-color: #8FA54F;
+            --background-color: #F0F0F0;
+            --text-color: #333333;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
         header {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: var(--secondary-color) 3px solid;
         }
-        nav {
-            background-color: #34495e;
-            padding: 0.5rem;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
+
+        header a {
+            color: #ffffff;
             text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: var(--accent-color);
             font-weight: bold;
         }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+
+        header a:hover {
+            color: var(--secondary-color);
         }
-        .hero {
-            background-image: url('https://example.com/hero-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
+
+        #showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -400px;
             text-align: center;
+            color: #ffffff;
         }
-        .hero h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
         }
-        .content-section {
-            background-color: #fff;
-            padding: 40px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        #showcase p {
+            font-size: 20px;
         }
-        footer {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
+
+        #newsletter {
+            padding: 15px;
+            color: #ffffff;
+            background: var(--secondary-color);
+        }
+
+        #newsletter h1 {
+            float: left;
+        }
+
+        #newsletter form {
+            float: right;
+            margin-top: 15px;
+        }
+
+        #newsletter input[type="email"] {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+
+        .button_1 {
+            height: 38px;
+            background: var(--accent-color);
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #ffffff;
+        }
+
+        #boxes {
             margin-top: 20px;
+        }
+
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+
+        #boxes .box img {
+            width: 90px;
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: var(--primary-color);
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sand Creek Whitetail</h1>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Sand Creek</span> Whitetail</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="hunts.html">Hunts</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#bucks">Our Bucks</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="hero">
-            <h1>Elite Stocker Bucks for Hunting Preserves</h1>
-        </section>
-        <section id="about" class="content-section">
-            <h2>About Sand Creek Whitetail</h2>
-            <p>Sand Creek Whitetail is a premier whitetail deer breeding company dedicated to developing elite stocker bucks for hunting preserves. Our commitment to quality and genetic excellence ensures that we provide the finest whitetail deer for your hunting experience.</p>
-        </section>
-        <section id="bucks" class="content-section">
-            <h2>Our Bucks</h2>
-            <p>Discover our impressive lineup of elite stocker bucks, carefully bred and raised to meet the highest standards of quality and performance. Our bucks are perfect for enhancing the hunting experience at preserves across the country.</p>
-            <!-- Add images and descriptions of featured bucks here -->
-        </section>
-        <section id="services" class="content-section">
-            <h2>Services</h2>
-            <ul>
-                <li>Elite stocker buck sales</li>
-                <li>Genetic consultation</li>
-                <li>Herd management advice</li>
-                <li>Breeding program development</li>
-            </ul>
-        </section>
-        <section id="contact" class="content-section">
-            <h2>Contact Us</h2>
-            <p>Interested in our elite stocker bucks or services? Get in touch with us today!</p>
-            <p>Email: info@sandcreekwhitetail.com</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Address: 123 Deer Trail, Whitetail County, State 12345</p>
-        </section>
-    </main>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Experience the Hunt of a Lifetime</h1>
+            <p>Sand Creek Whitetail offers premium hunting experiences in [Your Location]</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="trophy.png" alt="Trophy Buck">
+                <h3>Trophy Bucks</h3>
+                <p>Our property is home to some of the biggest bucks in the region.</p>
+            </div>
+            <div class="box">
+                <img src="lodge.png" alt="Comfortable Lodging">
+                <h3>Comfortable Lodging</h3>
+                <p>Stay in our fully equipped, modern hunting lodge during your trip.</p>
+            </div>
+            <div class="box">
+                <img src="guide.png" alt="Experienced Guides">
+                <h3>Experienced Guides</h3>
+                <p>Our knowledgeable guides ensure a safe and successful hunt.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Sand Creek Whitetail. All rights reserved.</p>
+        <p>Sand Creek Whitetail, Copyright &copy; 2025</p>
     </footer>
 </body>
 </html>
